@@ -14,7 +14,7 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var viewBodyMetrics: UIView!
     @IBOutlet weak var holderView: UIView!
     @IBOutlet weak var imageAvatar: UIImageView!
-    
+    let shapeLayer = CAShapeLayer()
     override func awakeFromNib() {
         super.awakeFromNib()
         dropShadow(object: viewTraining)
@@ -23,7 +23,6 @@ class HeaderCell: UITableViewCell {
         viewTraining.layer.cornerRadius = 25
         viewNutrition.layer.cornerRadius = 25
         viewBodyMetrics.layer.cornerRadius = 25
-        holderView.isUserInteractionEnabled = false
         
         self.imageAvatar.layer.cornerRadius = self.imageAvatar.frame.width/2
         self.imageAvatar.layer.masksToBounds = false
@@ -32,19 +31,30 @@ class HeaderCell: UITableViewCell {
         self.imageAvatar.clipsToBounds = true
         
         //Nutrition progress bar
-        let shapeLayer = CAShapeLayer()
         let center = viewNutrition.center
-        let circularPath = UIBezierPath(arcCenter: center, radius: 50, startAngle: 0, endAngle: 2 * CGFloat.pi, clockwise: true)
+
+        //Create track layer
+        let trackLayer = CAShapeLayer()
+        let circularPath = UIBezierPath(arcCenter: center, radius: 50, startAngle: -CGFloat.pi/2, endAngle: 2 * CGFloat.pi, clockwise: true)
+
+        trackLayer.path = circularPath.cgPath
+        trackLayer.strokeColor = UIColor.lightGray.cgColor
+        trackLayer.lineWidth = 5
+        trackLayer.fillColor = UIColor.clear.cgColor
+        trackLayer.lineCap = kCALineCapRound
+        viewNutrition.layer.addSublayer(trackLayer)
+
         shapeLayer.path = circularPath.cgPath
-        shapeLayer.lineWidth = 5
-        shapeLayer.lineCap = kCALineCapRound
-        shapeLayer.strokeEnd = 0
-        shapeLayer.fillColor = UIColor.white.cgColor
         shapeLayer.strokeColor = UIColor.green.cgColor
+        shapeLayer.lineWidth = 5
+        shapeLayer.fillColor = UIColor.clear.cgColor
+        shapeLayer.lineCap = kCALineCapRound
+
+        shapeLayer.strokeStart = CGFloat.pi/4
+
         viewNutrition.layer.addSublayer(shapeLayer)
         
     }
-
     
     
     override func setSelected(_ selected: Bool, animated: Bool) {
