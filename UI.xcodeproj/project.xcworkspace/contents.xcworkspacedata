@@ -2,6 +2,12 @@
 <Workspace
    version = "1.0">
    <FileRef
+      location = "group:Lato">
+   </FileRef>
+   <FileRef
+      location = "group:OpenSans">
+   </FileRef>
+   <FileRef
       location = "self:UI.xcodeproj">
    </FileRef>
 </Workspace>

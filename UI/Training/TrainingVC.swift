@@ -92,9 +92,9 @@ extension TrainingVC: UITableViewDelegate, UITableViewDataSource{
             if !(cell != nil){
                 cell = TrainingCell(style: .default, reuseIdentifier: TrainingCell.typeName)
             }
-            cell?.icon.image = UIImage(named: "")
-            cell?.sectionName.text = ""
-            cell?.rightIcon.image = UIImage(named: "")
+            cell?.icon.image = nil
+            cell?.sectionName.text = nil
+            cell?.rightIcon.image = nil
             return cell!
         }
     }

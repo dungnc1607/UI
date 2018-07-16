@@ -14,15 +14,33 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var viewBodyMetrics: UIView!
     @IBOutlet weak var holderView: UIView!
     @IBOutlet weak var imageAvatar: UIImageView!
+    
+    @IBOutlet weak var viewKindBackground: UIView!
+    @IBOutlet weak var viewTrainingWhite: UIView!
+    @IBOutlet weak var buttonStart: UIButton!
+    
+    @IBOutlet weak var viewCalLeft: UIView!
+    @IBOutlet weak var viewWeight: UIView!
+    @IBOutlet weak var viewBodyFat: UIView!
+    
     let shapeLayer = CAShapeLayer()
     override func awakeFromNib() {
         super.awakeFromNib()
         dropShadow(object: viewTraining)
         dropShadow(object: viewNutrition)
         dropShadow(object: viewBodyMetrics)
-        viewTraining.layer.cornerRadius = 25
-        viewNutrition.layer.cornerRadius = 25
-        viewBodyMetrics.layer.cornerRadius = 25
+        dropShadow(object: viewBodyFat)
+        dropShadow(object: viewWeight)
+        
+        self.viewTraining.layer.cornerRadius = 25
+        self.viewNutrition.layer.cornerRadius = 25
+        self.viewBodyMetrics.layer.cornerRadius = 25
+        self.viewWeight.layer.cornerRadius = 10
+        self.viewBodyFat.layer.cornerRadius = 10
+        self.viewCalLeft.layer.cornerRadius = 6
+        self.viewKindBackground.layer.cornerRadius = 8
+        self.viewTrainingWhite.layer.cornerRadius = 8
+        self.buttonStart.layer.cornerRadius = 8
         
         self.imageAvatar.layer.cornerRadius = self.imageAvatar.frame.width/2
         self.imageAvatar.layer.masksToBounds = false
@@ -31,8 +49,9 @@ class HeaderCell: UITableViewCell {
         self.imageAvatar.clipsToBounds = true
         
         //Nutrition progress bar
-        let center = viewNutrition.center
-
+        var center = viewNutrition.center
+        center.x -= 18
+        center.y += 13
         //Create track layer
         let trackLayer = CAShapeLayer()
         let circularPath = UIBezierPath(arcCenter: center, radius: 50, startAngle: -CGFloat.pi/2, endAngle: 2 * CGFloat.pi, clockwise: true)
@@ -45,6 +64,7 @@ class HeaderCell: UITableViewCell {
         viewNutrition.layer.addSublayer(trackLayer)
 
         shapeLayer.path = circularPath.cgPath
+//        shapeLayer.strokeColor = UIColor(red: 0, green: 168, blue: 156, alpha: 1).cgColor
         shapeLayer.strokeColor = UIColor.green.cgColor
         shapeLayer.lineWidth = 5
         shapeLayer.fillColor = UIColor.clear.cgColor
@@ -62,7 +82,7 @@ class HeaderCell: UITableViewCell {
     }
     
     func dropShadow(object: UIView){
-       object.layer.shadowColor = UIColor.black.cgColor
+        object.layer.shadowColor = UIColor.black.cgColor
         object.layer.shadowOpacity = 0.5
         object.layer.shadowOffset = CGSize.zero
         object.layer.shadowRadius = 5

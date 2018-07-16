@@ -13,8 +13,6 @@
 		E61F7D5420F6EBBF009A283A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61F7D5320F6EBBF009A283A /* Assets.xcassets */; };
 		E61F7D5720F6EBBF009A283A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61F7D5520F6EBBF009A283A /* LaunchScreen.storyboard */; };
 		E61F7D6220F6EBBF009A283A /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D6120F6EBBF009A283A /* UITests.swift */; };
-		E61F7D6F20F6EC17009A283A /* OpenSans in Resources */ = {isa = PBXBuildFile; fileRef = E61F7D6D20F6EC17009A283A /* OpenSans */; };
-		E61F7D7020F6EC17009A283A /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = E61F7D6E20F6EC17009A283A /* Lato */; };
 		E61F7D7320F6EF10009A283A /* TrainingVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D7120F6EF10009A283A /* TrainingVC.swift */; };
 		E61F7D7420F6EF10009A283A /* TrainingVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E61F7D7220F6EF10009A283A /* TrainingVC.xib */; };
 		E61F7D7720F6F075009A283A /* NSObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D7620F6F075009A283A /* NSObject.swift */; };
@@ -26,6 +24,8 @@
 		E61F7D9020F71007009A283A /* UIViewExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D8D20F71006009A283A /* UIViewExtensions.swift */; };
 		E61F7D9120F71007009A283A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D8E20F71007009A283A /* UIView.swift */; };
 		E61F7D9220F71007009A283A /* UIViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D8F20F71007009A283A /* UIViewController.swift */; };
+		E61FBCDE20F894C400A0894D /* OpenSans in Resources */ = {isa = PBXBuildFile; fileRef = E61FBCDC20F894C400A0894D /* OpenSans */; };
+		E61FBCDF20F894C400A0894D /* Lato in Resources */ = {isa = PBXBuildFile; fileRef = E61FBCDD20F894C400A0894D /* Lato */; };
 		E633CBD920F7391D00CF9FA0 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633CBD720F7391D00CF9FA0 /* UITextField.swift */; };
 		E633CBDA20F7391D00CF9FA0 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633CBD820F7391D00CF9FA0 /* UITableViewExtension.swift */; };
 		E633CBDC20F743D000CF9FA0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633CBDB20F743D000CF9FA0 /* String.swift */; };
@@ -52,8 +52,6 @@
 		E61F7D5D20F6EBBF009A283A /* UITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61F7D6120F6EBBF009A283A /* UITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UITests.swift; sourceTree = "<group>"; };
 		E61F7D6320F6EBBF009A283A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		E61F7D6D20F6EC17009A283A /* OpenSans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenSans; sourceTree = "<group>"; };
-		E61F7D6E20F6EC17009A283A /* Lato */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lato; sourceTree = "<group>"; };
 		E61F7D7120F6EF10009A283A /* TrainingVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrainingVC.swift; sourceTree = "<group>"; };
 		E61F7D7220F6EF10009A283A /* TrainingVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TrainingVC.xib; sourceTree = "<group>"; };
 		E61F7D7620F6F075009A283A /* NSObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NSObject.swift; sourceTree = "<group>"; };
@@ -65,6 +63,8 @@
 		E61F7D8D20F71006009A283A /* UIViewExtensions.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewExtensions.swift; sourceTree = "<group>"; };
 		E61F7D8E20F71007009A283A /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		E61F7D8F20F71007009A283A /* UIViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIViewController.swift; sourceTree = "<group>"; };
+		E61FBCDC20F894C400A0894D /* OpenSans */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenSans; sourceTree = "<group>"; };
+		E61FBCDD20F894C400A0894D /* Lato */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Lato; sourceTree = "<group>"; };
 		E633CBD720F7391D00CF9FA0 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		E633CBD820F7391D00CF9FA0 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		E633CBDB20F743D000CF9FA0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
@@ -134,8 +134,8 @@
 		E61F7D6C20F6EC05009A283A /* Font */ = {
 			isa = PBXGroup;
 			children = (
-				E61F7D6E20F6EC17009A283A /* Lato */,
-				E61F7D6D20F6EC17009A283A /* OpenSans */,
+				E61FBCDD20F894C400A0894D /* Lato */,
+				E61FBCDC20F894C400A0894D /* OpenSans */,
 			);
 			path = Font;
 			sourceTree = "<group>";
@@ -277,10 +277,10 @@
 				E61F7D5420F6EBBF009A283A /* Assets.xcassets in Resources */,
 				E61F7D8020F6F3DE009A283A /* HeaderCell.xib in Resources */,
 				E61F7D5220F6EBBE009A283A /* Main.storyboard in Resources */,
-				E61F7D7020F6EC17009A283A /* Lato in Resources */,
+				E61FBCDF20F894C400A0894D /* Lato in Resources */,
 				E61F7D8C20F70C67009A283A /* TrainingCell.xib in Resources */,
+				E61FBCDE20F894C400A0894D /* OpenSans in Resources */,
 				E61F7D7420F6EF10009A283A /* TrainingVC.xib in Resources */,
-				E61F7D6F20F6EC17009A283A /* OpenSans in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
