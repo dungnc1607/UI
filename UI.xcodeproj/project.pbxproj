@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E601A34B20FF260A00D6A5C8 /* BodyMetricCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601A34920FF260A00D6A5C8 /* BodyMetricCell.swift */; };
+		E601A34C20FF260A00D6A5C8 /* BodyMetricCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E601A34A20FF260A00D6A5C8 /* BodyMetricCell.xib */; };
 		E61F7D4D20F6EBBE009A283A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D4C20F6EBBE009A283A /* AppDelegate.swift */; };
 		E61F7D4F20F6EBBE009A283A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D4E20F6EBBE009A283A /* ViewController.swift */; };
 		E61F7D5220F6EBBE009A283A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61F7D5020F6EBBE009A283A /* Main.storyboard */; };
@@ -42,6 +44,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		E601A34920FF260A00D6A5C8 /* BodyMetricCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BodyMetricCell.swift; sourceTree = "<group>"; };
+		E601A34A20FF260A00D6A5C8 /* BodyMetricCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyMetricCell.xib; sourceTree = "<group>"; };
 		E61F7D4920F6EBBE009A283A /* UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61F7D4C20F6EBBE009A283A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E61F7D4E20F6EBBE009A283A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -88,6 +92,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E601A34720FF25DF00D6A5C8 /* Body Metric Cell */ = {
+			isa = PBXGroup;
+			children = (
+				E601A34920FF260A00D6A5C8 /* BodyMetricCell.swift */,
+				E601A34A20FF260A00D6A5C8 /* BodyMetricCell.xib */,
+			);
+			path = "Body Metric Cell";
+			sourceTree = "<group>";
+		};
 		E61F7D4020F6EBBE009A283A = {
 			isa = PBXGroup;
 			children = (
@@ -168,6 +181,7 @@
 		E61F7D7920F6F371009A283A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
+				E601A34720FF25DF00D6A5C8 /* Body Metric Cell */,
 				E61F7D7A20F6F383009A283A /* Header Cell */,
 				E61F7D7B20F6F38E009A283A /* Footer Cell */,
 			);
@@ -275,6 +289,7 @@
 			files = (
 				E61F7D5720F6EBBF009A283A /* LaunchScreen.storyboard in Resources */,
 				E61F7D5420F6EBBF009A283A /* Assets.xcassets in Resources */,
+				E601A34C20FF260A00D6A5C8 /* BodyMetricCell.xib in Resources */,
 				E61F7D8020F6F3DE009A283A /* HeaderCell.xib in Resources */,
 				E61F7D5220F6EBBE009A283A /* Main.storyboard in Resources */,
 				E61FBCDF20F894C400A0894D /* Lato in Resources */,
@@ -307,6 +322,7 @@
 				E61F7D7720F6F075009A283A /* NSObject.swift in Sources */,
 				E61F7D9220F71007009A283A /* UIViewController.swift in Sources */,
 				E61F7D8620F6FB46009A283A /* TableViewExtension.swift in Sources */,
+				E601A34B20FF260A00D6A5C8 /* BodyMetricCell.swift in Sources */,
 				E61F7D4D20F6EBBE009A283A /* AppDelegate.swift in Sources */,
 				E61F7D8B20F70C67009A283A /* TrainingCell.swift in Sources */,
 				E61F7D9120F71007009A283A /* UIView.swift in Sources */,

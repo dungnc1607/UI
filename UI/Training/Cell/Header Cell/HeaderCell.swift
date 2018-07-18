@@ -8,6 +8,11 @@
 
 import UIKit
 
+enum BodyMetricUI: Int {
+    case WEIGHT = 0,
+    BODY_FAT
+}
+
 class HeaderCell: UITableViewCell {
     @IBOutlet weak var viewTraining: UIView!
     @IBOutlet weak var viewNutrition: UIView!
@@ -33,20 +38,23 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var Sat: UIImageView!
     @IBOutlet weak var Sun: UIImageView!
     
+    @IBOutlet weak var tableView: UITableView!
+    
     let shapeLayer = CAShapeLayer()
     override func awakeFromNib() {
         super.awakeFromNib()
+        
+        tableView.registerCellNib(BodyMetricCell.self)
+        
         dropShadow(object: viewTraining)
         dropShadow(object: viewNutrition)
         dropShadow(object: viewBodyMetrics)
-        dropShadow(object: viewBodyFat)
-        dropShadow(object: viewWeight)
+//        dropShadow(object: viewBodyFat)
+//        dropShadow(object: viewWeight)
         
         self.viewTraining.layer.cornerRadius = 25
         self.viewNutrition.layer.cornerRadius = 25
         self.viewBodyMetrics.layer.cornerRadius = 25
-        self.viewWeight.layer.cornerRadius = 10
-        self.viewBodyFat.layer.cornerRadius = 10
         self.viewCalLeft.layer.cornerRadius = 6
         self.viewKindBackground.layer.cornerRadius = 8
         self.viewTrainingWhite.layer.cornerRadius = 8
@@ -86,6 +94,8 @@ class HeaderCell: UITableViewCell {
 
         viewNutrition.layer.addSublayer(shapeLayer)
         
+        tableView.dataSource = self
+        tableView.delegate = self
     }
     
     func setupTrainingDay(){
@@ -118,5 +128,33 @@ class HeaderCell: UITableViewCell {
         object.layer.shadowOpacity = 0.5
         object.layer.shadowOffset = CGSize.zero
         object.layer.shadowRadius = 5
+    }
+}
+
+extension HeaderCell: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 50
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 2
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let condition:BodyMetricUI = BodyMetricUI(rawValue: indexPath.row)!
+        switch condition {
+        case .WEIGHT:
+            let cell:BodyMetricCell = (tableView.dequeueReusableCell(withIdentifier: BodyMetricCell.typeName, for: indexPath) as? BodyMetricCell)!
+            cell.number.text = "160 lb"
+            cell.type.text = "Weight"
+            cell.time.text = "Today"
+            return cell
+        case .BODY_FAT:
+            let cell: BodyMetricCell = (tableView.dequeueReusableCell(withIdentifier: BodyMetricCell.typeName, for: indexPath) as? BodyMetricCell)!
+            cell.number.text = "15%"
+            cell.type.text = "Body Fat"
+            cell.time.text = "July 3"
+            return cell
+        }
     }
 }
