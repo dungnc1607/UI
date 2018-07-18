@@ -15,6 +15,7 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var holderView: UIView!
     @IBOutlet weak var imageAvatar: UIImageView!
     
+    @IBOutlet weak var headerImage: UIImageView!
     @IBOutlet weak var viewKindBackground: UIView!
     @IBOutlet weak var viewTrainingWhite: UIView!
     @IBOutlet weak var buttonStart: UIButton!
@@ -22,6 +23,15 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var viewCalLeft: UIView!
     @IBOutlet weak var viewWeight: UIView!
     @IBOutlet weak var viewBodyFat: UIView!
+    
+    @IBOutlet weak var icon_X: UIImageView!
+    @IBOutlet weak var Mon: UIImageView!
+    @IBOutlet weak var Tue: UIImageView!
+    @IBOutlet weak var Wed: UIImageView!
+    @IBOutlet weak var Thu: UIImageView!
+    @IBOutlet weak var Fri: UIImageView!
+    @IBOutlet weak var Sat: UIImageView!
+    @IBOutlet weak var Sun: UIImageView!
     
     let shapeLayer = CAShapeLayer()
     override func awakeFromNib() {
@@ -47,6 +57,8 @@ class HeaderCell: UITableViewCell {
         self.imageAvatar.layer.borderColor = UIColor.white.cgColor
         self.imageAvatar.layer.borderWidth = 1
         self.imageAvatar.clipsToBounds = true
+      
+        setupTrainingDay()
         
         //Nutrition progress bar
         var center = viewNutrition.center
@@ -64,7 +76,7 @@ class HeaderCell: UITableViewCell {
         viewNutrition.layer.addSublayer(trackLayer)
 
         shapeLayer.path = circularPath.cgPath
-//        shapeLayer.strokeColor = UIColor(red: 0, green: 168, blue: 156, alpha: 1).cgColor
+//     shapeLayer.strokeColor = UIColor(red: 0, green: 168, blue: 156, alpha: 1).cgColor
         shapeLayer.strokeColor = UIColor.green.cgColor
         shapeLayer.lineWidth = 5
         shapeLayer.fillColor = UIColor.clear.cgColor
@@ -76,6 +88,26 @@ class HeaderCell: UITableViewCell {
         
     }
     
+    func setupTrainingDay(){
+        makeCircleAndColor(object: self.Mon, color: UIColor.green)
+        makeCircleAndColor(object: self.Tue, color: UIColor.green)
+        makeCircleAndColor(object: self.Wed, color: UIColor.purple)
+        makeCircleAndColor(object: self.Thu, color: UIColor.gray)
+        makeCircleAndColor(object: self.Fri, color: UIColor.green)
+        makeCircleAndColor(object: self.Sat, color: UIColor.gray)
+        makeCircleAndColor(object: self.Sun, color: UIColor.green)
+        self.icon_X.image = self.icon_X.image!.withRenderingMode(.alwaysTemplate)
+        icon_X.tintColor = UIColor.purple
+        
+    }
+    
+    func makeCircleAndColor(object: UIImageView ,color:UIColor){
+        object.layer.cornerRadius = object.frame.width/2
+        object.layer.masksToBounds = false
+        object.layer.borderColor = color.cgColor
+        object.layer.borderWidth = 1
+        object.clipsToBounds = true
+    }
     
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)

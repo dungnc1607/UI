@@ -25,6 +25,8 @@ class TrainingVC: ViewController {
         super.viewDidLoad()
         tableview.register(UINib(nibName: HeaderCell.typeName, bundle: Bundle.main), forCellReuseIdentifier: HeaderCell.typeName)
         tableview.register(UINib(nibName: TrainingCell.typeName, bundle: Bundle.main), forCellReuseIdentifier: TrainingCell.typeName)
+        let insets = UIEdgeInsets(top: -5, left: 0, bottom: 0, right: 0)
+        self.tableview.contentInset = insets
     }
 
     override func didReceiveMemoryWarning() {
