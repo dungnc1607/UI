@@ -50,7 +50,9 @@ extension TrainingVC: UITableViewDelegate, UITableViewDataSource{
             }
 			cell?.onStart = {
 				self.vmNavigation?.openStartWorkOut()
-			}
+                self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain , target: nil, action: nil)
+                self.navigationController?.navigationBar.tintColor = UIColor.white
+            }
             return cell!
             
         case .STEP:

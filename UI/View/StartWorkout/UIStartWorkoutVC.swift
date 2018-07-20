@@ -11,9 +11,15 @@ import UIKit
 class UIStartWorkoutVC: UIBaseVC, UIStartWorkoutVMProtocol {
 	@IBOutlet weak var tableView: UITableView!
 	@IBOutlet weak var buttonStartWorkout: UIButton!
-	var workoutGroup: WorkoutGroup = WorkoutGroup()
+    @IBOutlet weak var headerImage: UIImageView!
+    var workoutGroup: WorkoutGroup = WorkoutGroup()
     override func viewDidLoad() {
         super.viewDidLoad()
+        navigationItem.title = "Program name?"
+        let textAttributes = [NSAttributedStringKey.foregroundColor:UIColor.white]
+        navigationController?.navigationBar.titleTextAttributes = textAttributes
+        
+        headerImage.tintColor = UIColor(hex: "8385E6")
 		tableView.registerCellNib(UIStartWorkoutCell.self)
 		let exe1 = WorkoutExercise()
 		let exe2 = WorkoutExercise()
@@ -38,6 +44,7 @@ class UIStartWorkoutVC: UIBaseVC, UIStartWorkoutVMProtocol {
         
         let tTripleSet = WorkoutName()
         tTripleSet.sets = [WorkoutSet()]
+
 		
 		exe1.names = [name1]
 		exe2.names = [name2, name3]

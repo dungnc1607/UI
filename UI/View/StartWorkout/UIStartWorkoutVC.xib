@@ -10,14 +10,15 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <customFonts key="customFonts">
-        <array key="Lato-Regular.ttf">
-            <string>Lato-Regular</string>
+        <array key="OpenSans-Regular.ttf">
+            <string>OpenSans-Regular</string>
         </array>
     </customFonts>
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="UIStartWorkoutVC" customModule="UI" customModuleProvider="target">
             <connections>
                 <outlet property="buttonStartWorkout" destination="eAO-kq-Rzg" id="y2K-fX-doz"/>
+                <outlet property="headerImage" destination="H5W-Vk-UZ0" id="zSr-KX-7G6"/>
                 <outlet property="tableView" destination="wwC-yp-rYh" id="TKP-gq-ems"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -27,9 +28,16 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="client_header_bg" translatesAutoresizingMaskIntoConstraints="NO" id="H5W-Vk-UZ0">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="218"/>
+                    <color key="backgroundColor" red="0.50980392156862742" green="0.51764705882352946" blue="0.89803921568627454" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="218" id="Td4-lY-7lF"/>
+                    </constraints>
+                </imageView>
                 <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="none" allowsSelection="NO" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="wwC-yp-rYh">
-                    <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                     <connections>
                         <outlet property="dataSource" destination="-1" id="r9L-SV-O3C"/>
                         <outlet property="delegate" destination="-1" id="hEc-eY-IGg"/>
@@ -41,7 +49,7 @@
                     <constraints>
                         <constraint firstAttribute="height" constant="40" id="joC-Lq-KBQ"/>
                     </constraints>
-                    <fontDescription key="fontDescription" name="Lato-Regular" family="Lato" pointSize="18"/>
+                    <fontDescription key="fontDescription" name="OpenSans-Regular" family="Open Sans" pointSize="15"/>
                     <inset key="imageEdgeInsets" minX="20" minY="2" maxX="0.0" maxY="0.0"/>
                     <state key="normal" title="Start Workout" image="right_arrow">
                         <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -58,19 +66,23 @@
             </subviews>
             <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="eAO-kq-Rzg" secondAttribute="trailing" constant="40" id="6YZ-cq-Mop"/>
-                <constraint firstItem="eAO-kq-Rzg" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="40" id="ANy-Sw-nad"/>
+                <constraint firstItem="wwC-yp-rYh" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="2fi-Nf-xkR"/>
+                <constraint firstAttribute="trailing" secondItem="eAO-kq-Rzg" secondAttribute="trailing" constant="40" id="6YZ-cq-Mop"/>
+                <constraint firstItem="eAO-kq-Rzg" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" constant="40" id="ANy-Sw-nad"/>
+                <constraint firstItem="H5W-Vk-UZ0" firstAttribute="trailing" secondItem="i5M-Pr-FkT" secondAttribute="trailing" id="Ia1-Sr-f3Y"/>
+                <constraint firstItem="H5W-Vk-UZ0" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="TV1-GR-hBK"/>
                 <constraint firstItem="wwC-yp-rYh" firstAttribute="leading" secondItem="i5M-Pr-FkT" secondAttribute="leading" id="YlE-lx-oUA"/>
-                <constraint firstItem="wwC-yp-rYh" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="ZUS-hY-Yjf"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="eAO-kq-Rzg" secondAttribute="bottom" constant="35" id="aqq-n6-fCW"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="wwC-yp-rYh" secondAttribute="trailing" id="nLf-h1-fjx"/>
-                <constraint firstItem="fnl-2z-Ty3" firstAttribute="bottom" secondItem="wwC-yp-rYh" secondAttribute="bottom" id="x0w-b0-Kzh"/>
+                <constraint firstAttribute="bottom" secondItem="eAO-kq-Rzg" secondAttribute="bottom" constant="35" id="aqq-n6-fCW"/>
+                <constraint firstAttribute="trailing" secondItem="wwC-yp-rYh" secondAttribute="trailing" id="nLf-h1-fjx"/>
+                <constraint firstAttribute="bottom" secondItem="wwC-yp-rYh" secondAttribute="bottom" id="x0w-b0-Kzh"/>
+                <constraint firstItem="H5W-Vk-UZ0" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="xer-E8-vr3"/>
             </constraints>
-            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <viewLayoutGuide key="safeArea" id="Hlx-Dt-PXw"/>
             <point key="canvasLocation" x="25.5" y="51.5"/>
         </view>
     </objects>
     <resources>
+        <image name="client_header_bg" width="750" height="495"/>
         <image name="right_arrow" width="5" height="11"/>
     </resources>
 </document>
