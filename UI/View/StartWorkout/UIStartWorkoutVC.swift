@@ -2,7 +2,7 @@
 //  UIStartWorkoutVC.swift
 //  UI
 //
-//  Created by Tran Manh Quy on 7/19/18.
+//  Created by Squall on 7/19/18.
 //  Copyright © 2018 Squall. All rights reserved.
 //
 
@@ -17,19 +17,33 @@ class UIStartWorkoutVC: UIBaseVC, UIStartWorkoutVMProtocol {
 		tableView.registerCellNib(UIStartWorkoutCell.self)
 		let exe1 = WorkoutExercise()
 		let exe2 = WorkoutExercise()
-		
+		let exe3 = WorkoutExercise()
+        
 		let name1 = WorkoutName()
 		name1.sets = [WorkoutSet()]
 		
+        //Super set
 		let name2 = WorkoutName()
 		name2.sets = [WorkoutSet()]
+        
 		let name3 = WorkoutName()
 		name3.sets = [WorkoutSet()]
+        
+        //Triple set
+        let fTripleSet = WorkoutName()
+        fTripleSet.sets = [WorkoutSet()]
+        
+        let sTripleSet = WorkoutName()
+        sTripleSet.sets = [WorkoutSet()]
+        
+        let tTripleSet = WorkoutName()
+        tTripleSet.sets = [WorkoutSet()]
 		
 		exe1.names = [name1]
-		exe2.names = [name2,name3]
+		exe2.names = [name2, name3]
+        exe3.names = [fTripleSet, sTripleSet, tTripleSet]
 		
-		workoutGroup.exercises = [exe1, exe2]
+		workoutGroup.exercises = [exe1, exe2, exe3]
 		tableView.reloadData()
 		
     }

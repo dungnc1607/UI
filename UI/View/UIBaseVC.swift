@@ -2,7 +2,7 @@
 //  UIBaseVC.swift
 //  UI
 //
-//  Created by Tran Manh Quy on 7/19/18.
+//  Created by Squall on 7/19/18.
 //  Copyright © 2018 Squall. All rights reserved.
 //
 
