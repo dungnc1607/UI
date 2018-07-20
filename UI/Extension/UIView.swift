@@ -80,6 +80,18 @@ extension UIView {
         layer.rasterizationScale = scale ? UIScreen.main.scale : 1
     }
 	
+	func dropShadow() {
+		layer.masksToBounds = false
+		layer.shadowColor = UIColor.darkGray.cgColor
+		layer.shadowOpacity = 0.5
+		layer.shadowOffset = CGSize.zero
+		layer.shadowRadius = 3
+	}
+	
+	func removeShadow() {
+		self.layer.shadowOpacity = 0.0
+	}
+	
 	// different inner shadow styles
 	public enum innerShadowSide {
 		case all, left, right, top, bottom, topAndLeft, topAndRight, bottomAndLeft, bottomAndRight, exceptLeft, exceptRight, exceptTop, exceptBottom
@@ -181,9 +193,20 @@ extension UILabel {
 		return size.width
 	}
 	
+	func neededWidthAndHeight(fromText text: String) -> (CGFloat, CGFloat) {
+		self.text = text
+		let size = self.systemLayoutSizeFitting(UILayoutFittingCompressedSize)
+		return (size.width, size.height)
+	}
+	
 	@objc func updateWidth(fromText text: String) {
 		let width = self.neededWidth(fromText: text)
 		self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: width, height: self.frame.size.height)
+	}
+	
+	@objc func updateWidthAndHeight(fromText text: String) {
+		let size = self.neededWidthAndHeight(fromText: text)
+		self.frame = CGRect(x: self.frame.origin.x, y: self.frame.origin.y, width: size.0, height: size.1)
 	}
     
     func setTextWhileKeepingAttributes(string: String) {

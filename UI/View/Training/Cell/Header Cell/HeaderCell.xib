@@ -94,10 +94,10 @@
                             <constraint firstItem="9co-DD-Lvl" firstAttribute="leading" secondItem="8gR-ZS-fK5" secondAttribute="trailing" constant="20" id="pQ6-xO-GLr"/>
                         </constraints>
                     </view>
-                    <view userInteractionEnabled="NO" contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="d6c-0V-Ra7" userLabel="Holder View">
+                    <view contentMode="scaleAspectFit" translatesAutoresizingMaskIntoConstraints="NO" id="d6c-0V-Ra7" userLabel="Holder View">
                         <rect key="frame" x="0.0" y="188" width="375" height="364"/>
                         <subviews>
-                            <view userInteractionEnabled="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDM-OH-cYp" userLabel="Training View">
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YDM-OH-cYp" userLabel="Training View">
                                 <rect key="frame" x="16.5" y="0.0" width="342" height="172"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RBo-os-rfb" userLabel="Line 1">
@@ -132,6 +132,9 @@
                                                         <state key="normal" title="Start">
                                                             <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                                         </state>
+                                                        <connections>
+                                                            <action selector="actionClickStart:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="gEo-8P-I1g"/>
+                                                        </connections>
                                                     </button>
                                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Super Chest Workout" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="goA-nQ-JoN">
                                                         <rect key="frame" x="18" y="9.5" width="139" height="19.5"/>

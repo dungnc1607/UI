@@ -39,6 +39,8 @@ class HeaderCell: UITableViewCell {
     @IBOutlet weak var Sun: UIImageView!
     
     @IBOutlet weak var tableView: UITableView!
+	
+	var onStart: (() -> Void)?
     
     let shapeLayer = CAShapeLayer()
     override func awakeFromNib() {
@@ -129,6 +131,11 @@ class HeaderCell: UITableViewCell {
         object.layer.shadowOffset = CGSize.zero
         object.layer.shadowRadius = 5
     }
+	
+	// MARK: - UI Action
+	@IBAction func actionClickStart(_ sender: Any) {
+		onStart?()
+	}
 }
 
 extension HeaderCell: UITableViewDelegate, UITableViewDataSource {

@@ -12,4 +12,8 @@ extension NSObject{
     static var typeName:String{
         return String(describing: self)
     }
+	
+	var objectName: String {
+		return String(describing: type(of: self))
+	}
 }

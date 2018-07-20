@@ -10,8 +10,6 @@
 		E601A34B20FF260A00D6A5C8 /* BodyMetricCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E601A34920FF260A00D6A5C8 /* BodyMetricCell.swift */; };
 		E601A34C20FF260A00D6A5C8 /* BodyMetricCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E601A34A20FF260A00D6A5C8 /* BodyMetricCell.xib */; };
 		E61F7D4D20F6EBBE009A283A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D4C20F6EBBE009A283A /* AppDelegate.swift */; };
-		E61F7D4F20F6EBBE009A283A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D4E20F6EBBE009A283A /* ViewController.swift */; };
-		E61F7D5220F6EBBE009A283A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61F7D5020F6EBBE009A283A /* Main.storyboard */; };
 		E61F7D5420F6EBBF009A283A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E61F7D5320F6EBBF009A283A /* Assets.xcassets */; };
 		E61F7D5720F6EBBF009A283A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E61F7D5520F6EBBF009A283A /* LaunchScreen.storyboard */; };
 		E61F7D6220F6EBBF009A283A /* UITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = E61F7D6120F6EBBF009A283A /* UITests.swift */; };
@@ -31,6 +29,17 @@
 		E633CBD920F7391D00CF9FA0 /* UITextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633CBD720F7391D00CF9FA0 /* UITextField.swift */; };
 		E633CBDA20F7391D00CF9FA0 /* UITableViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633CBD820F7391D00CF9FA0 /* UITableViewExtension.swift */; };
 		E633CBDC20F743D000CF9FA0 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = E633CBDB20F743D000CF9FA0 /* String.swift */; };
+		FEEBB08C210053B500789CCC /* UIBaseVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBB08B210053B500789CCC /* UIBaseVC.swift */; };
+		FEEBB08E210053CE00789CCC /* UINavigationVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBB08D210053CE00789CCC /* UINavigationVM.swift */; };
+		FEEBB09221005BD200789CCC /* UIStartWorkoutVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBB09021005BD200789CCC /* UIStartWorkoutVC.swift */; };
+		FEEBB09321005BD200789CCC /* UIStartWorkoutVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB09121005BD200789CCC /* UIStartWorkoutVC.xib */; };
+		FEEBB09621005C9800789CCC /* UIStartWorkoutVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBB09521005C9800789CCC /* UIStartWorkoutVM.swift */; };
+		FEEBB0982100648A00789CCC /* UIBaseVM.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBB0972100648A00789CCC /* UIBaseVM.swift */; };
+		FEEBB09B2100699100789CCC /* UIReuseableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBB09A2100699100789CCC /* UIReuseableView.swift */; };
+		FEEBB09F210070EF00789CCC /* UIStartWorkoutCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBB09D210070EF00789CCC /* UIStartWorkoutCell.swift */; };
+		FEEBB0A0210070EF00789CCC /* UIStartWorkoutCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FEEBB09E210070EF00789CCC /* UIStartWorkoutCell.xib */; };
+		FEEBB0A2210082A400789CCC /* WorkoutSet.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBB0A1210082A400789CCC /* WorkoutSet.swift */; };
+		FEEBB0A4210094BA00789CCC /* UIColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FEEBB0A3210094BA00789CCC /* UIColor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,8 +57,6 @@
 		E601A34A20FF260A00D6A5C8 /* BodyMetricCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BodyMetricCell.xib; sourceTree = "<group>"; };
 		E61F7D4920F6EBBE009A283A /* UI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UI.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E61F7D4C20F6EBBE009A283A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		E61F7D4E20F6EBBE009A283A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		E61F7D5120F6EBBE009A283A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		E61F7D5320F6EBBF009A283A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E61F7D5620F6EBBF009A283A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E61F7D5820F6EBBF009A283A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,6 +79,17 @@
 		E633CBD720F7391D00CF9FA0 /* UITextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextField.swift; sourceTree = "<group>"; };
 		E633CBD820F7391D00CF9FA0 /* UITableViewExtension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITableViewExtension.swift; sourceTree = "<group>"; };
 		E633CBDB20F743D000CF9FA0 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		FEEBB08B210053B500789CCC /* UIBaseVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBaseVC.swift; sourceTree = "<group>"; };
+		FEEBB08D210053CE00789CCC /* UINavigationVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UINavigationVM.swift; sourceTree = "<group>"; };
+		FEEBB09021005BD200789CCC /* UIStartWorkoutVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStartWorkoutVC.swift; sourceTree = "<group>"; };
+		FEEBB09121005BD200789CCC /* UIStartWorkoutVC.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIStartWorkoutVC.xib; sourceTree = "<group>"; };
+		FEEBB09521005C9800789CCC /* UIStartWorkoutVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStartWorkoutVM.swift; sourceTree = "<group>"; };
+		FEEBB0972100648A00789CCC /* UIBaseVM.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIBaseVM.swift; sourceTree = "<group>"; };
+		FEEBB09A2100699100789CCC /* UIReuseableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIReuseableView.swift; sourceTree = "<group>"; };
+		FEEBB09D210070EF00789CCC /* UIStartWorkoutCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIStartWorkoutCell.swift; sourceTree = "<group>"; };
+		FEEBB09E210070EF00789CCC /* UIStartWorkoutCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = UIStartWorkoutCell.xib; sourceTree = "<group>"; };
+		FEEBB0A1210082A400789CCC /* WorkoutSet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutSet.swift; sourceTree = "<group>"; };
+		FEEBB0A3210094BA00789CCC /* UIColor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIColor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -122,12 +140,13 @@
 		E61F7D4B20F6EBBE009A283A /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				FEEBB0992100696200789CCC /* Reuse */,
+				FEEBB08A2100538000789CCC /* ViewModel */,
+				FEEBB0892100537B00789CCC /* View */,
+				FEEBB0882100537400789CCC /* Model */,
 				E61F7D6C20F6EC05009A283A /* Font */,
 				E61F7D7520F6F044009A283A /* Extension */,
-				E61F7D7820F6F351009A283A /* Training */,
 				E61F7D4C20F6EBBE009A283A /* AppDelegate.swift */,
-				E61F7D4E20F6EBBE009A283A /* ViewController.swift */,
-				E61F7D5020F6EBBE009A283A /* Main.storyboard */,
 				E61F7D5320F6EBBF009A283A /* Assets.xcassets */,
 				E61F7D5520F6EBBF009A283A /* LaunchScreen.storyboard */,
 				E61F7D5820F6EBBF009A283A /* Info.plist */,
@@ -156,6 +175,7 @@
 		E61F7D7520F6F044009A283A /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				FEEBB0A3210094BA00789CCC /* UIColor.swift */,
 				E633CBDB20F743D000CF9FA0 /* String.swift */,
 				E633CBD820F7391D00CF9FA0 /* UITableViewExtension.swift */,
 				E633CBD720F7391D00CF9FA0 /* UITextField.swift */,
@@ -181,8 +201,8 @@
 		E61F7D7920F6F371009A283A /* Cell */ = {
 			isa = PBXGroup;
 			children = (
-				E601A34720FF25DF00D6A5C8 /* Body Metric Cell */,
 				E61F7D7A20F6F383009A283A /* Header Cell */,
+				E601A34720FF25DF00D6A5C8 /* Body Metric Cell */,
 				E61F7D7B20F6F38E009A283A /* Footer Cell */,
 			);
 			path = Cell;
@@ -204,6 +224,69 @@
 				E61F7D8A20F70C67009A283A /* TrainingCell.xib */,
 			);
 			path = "Footer Cell";
+			sourceTree = "<group>";
+		};
+		FEEBB0882100537400789CCC /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBB0A1210082A400789CCC /* WorkoutSet.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		FEEBB0892100537B00789CCC /* View */ = {
+			isa = PBXGroup;
+			children = (
+				E61F7D7820F6F351009A283A /* Training */,
+				FEEBB08F210058E800789CCC /* StartWorkout */,
+				FEEBB08B210053B500789CCC /* UIBaseVC.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		FEEBB08A2100538000789CCC /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBB09421005BFB00789CCC /* StartWorkout */,
+				FEEBB08D210053CE00789CCC /* UINavigationVM.swift */,
+				FEEBB0972100648A00789CCC /* UIBaseVM.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		FEEBB08F210058E800789CCC /* StartWorkout */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBB09C210070B700789CCC /* Cell */,
+				FEEBB09021005BD200789CCC /* UIStartWorkoutVC.swift */,
+				FEEBB09121005BD200789CCC /* UIStartWorkoutVC.xib */,
+			);
+			path = StartWorkout;
+			sourceTree = "<group>";
+		};
+		FEEBB09421005BFB00789CCC /* StartWorkout */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBB09521005C9800789CCC /* UIStartWorkoutVM.swift */,
+			);
+			path = StartWorkout;
+			sourceTree = "<group>";
+		};
+		FEEBB0992100696200789CCC /* Reuse */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBB09A2100699100789CCC /* UIReuseableView.swift */,
+			);
+			path = Reuse;
+			sourceTree = "<group>";
+		};
+		FEEBB09C210070B700789CCC /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				FEEBB09D210070EF00789CCC /* UIStartWorkoutCell.swift */,
+				FEEBB09E210070EF00789CCC /* UIStartWorkoutCell.xib */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -290,11 +373,12 @@
 				E61F7D5720F6EBBF009A283A /* LaunchScreen.storyboard in Resources */,
 				E61F7D5420F6EBBF009A283A /* Assets.xcassets in Resources */,
 				E601A34C20FF260A00D6A5C8 /* BodyMetricCell.xib in Resources */,
+				FEEBB09321005BD200789CCC /* UIStartWorkoutVC.xib in Resources */,
 				E61F7D8020F6F3DE009A283A /* HeaderCell.xib in Resources */,
-				E61F7D5220F6EBBE009A283A /* Main.storyboard in Resources */,
 				E61FBCDF20F894C400A0894D /* Lato in Resources */,
 				E61F7D8C20F70C67009A283A /* TrainingCell.xib in Resources */,
 				E61FBCDE20F894C400A0894D /* OpenSans in Resources */,
+				FEEBB0A0210070EF00789CCC /* UIStartWorkoutCell.xib in Resources */,
 				E61F7D7420F6EF10009A283A /* TrainingVC.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -313,18 +397,26 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E61F7D4F20F6EBBE009A283A /* ViewController.swift in Sources */,
+				FEEBB09621005C9800789CCC /* UIStartWorkoutVM.swift in Sources */,
 				E633CBDC20F743D000CF9FA0 /* String.swift in Sources */,
+				FEEBB09221005BD200789CCC /* UIStartWorkoutVC.swift in Sources */,
+				FEEBB0982100648A00789CCC /* UIBaseVM.swift in Sources */,
 				E61F7D7F20F6F3DE009A283A /* HeaderCell.swift in Sources */,
 				E61F7D9020F71007009A283A /* UIViewExtensions.swift in Sources */,
 				E633CBDA20F7391D00CF9FA0 /* UITableViewExtension.swift in Sources */,
+				FEEBB0A4210094BA00789CCC /* UIColor.swift in Sources */,
 				E633CBD920F7391D00CF9FA0 /* UITextField.swift in Sources */,
 				E61F7D7720F6F075009A283A /* NSObject.swift in Sources */,
 				E61F7D9220F71007009A283A /* UIViewController.swift in Sources */,
 				E61F7D8620F6FB46009A283A /* TableViewExtension.swift in Sources */,
+				FEEBB09B2100699100789CCC /* UIReuseableView.swift in Sources */,
 				E601A34B20FF260A00D6A5C8 /* BodyMetricCell.swift in Sources */,
 				E61F7D4D20F6EBBE009A283A /* AppDelegate.swift in Sources */,
+				FEEBB09F210070EF00789CCC /* UIStartWorkoutCell.swift in Sources */,
 				E61F7D8B20F70C67009A283A /* TrainingCell.swift in Sources */,
+				FEEBB0A2210082A400789CCC /* WorkoutSet.swift in Sources */,
+				FEEBB08C210053B500789CCC /* UIBaseVC.swift in Sources */,
+				FEEBB08E210053CE00789CCC /* UINavigationVM.swift in Sources */,
 				E61F7D9120F71007009A283A /* UIView.swift in Sources */,
 				E61F7D7320F6EF10009A283A /* TrainingVC.swift in Sources */,
 			);
@@ -349,14 +441,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		E61F7D5020F6EBBE009A283A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				E61F7D5120F6EBBE009A283A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		E61F7D5520F6EBBF009A283A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (

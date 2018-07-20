@@ -17,7 +17,7 @@ enum TrainingElement:Int{
     DEFAULT
 }
 
-class TrainingVC: ViewController {
+class TrainingVC: UIBaseVC {
 
     @IBOutlet weak var tableview: UITableView!
     
@@ -48,6 +48,9 @@ extension TrainingVC: UITableViewDelegate, UITableViewDataSource{
             if !(cell != nil){
                 cell = HeaderCell(style: .default, reuseIdentifier: HeaderCell.typeName)
             }
+			cell?.onStart = {
+				self.vmNavigation?.openStartWorkOut()
+			}
             return cell!
             
         case .STEP:
@@ -55,8 +58,7 @@ extension TrainingVC: UITableViewDelegate, UITableViewDataSource{
             if !(cell != nil){
                 cell = TrainingCell(style: .default, reuseIdentifier: TrainingCell.typeName)
             }
-            cell?.icon.image = UIImage(named: "ic_shoes")
-            cell?.sectionName.text = "Steps"
+			cell?.setupData(text: "ic_shoes", text2: "Steps")
             return cell!
             
         case .PROGRESS_PHOTO:

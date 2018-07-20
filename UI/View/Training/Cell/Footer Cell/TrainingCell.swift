@@ -24,5 +24,9 @@ class TrainingCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
-    
+	
+	func setupData(text: String, text2: String) {
+		self.icon.image = UIImage(named: text)
+		self.sectionName.text = text2
+	}
 }
